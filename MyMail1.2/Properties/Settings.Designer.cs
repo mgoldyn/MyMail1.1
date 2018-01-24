@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MyMail.Properties
+namespace MyMail1._2.Properties
 {
 
 

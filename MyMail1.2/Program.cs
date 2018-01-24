@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MyMail
+namespace MyMail1._2
 {
     static class Program
     {

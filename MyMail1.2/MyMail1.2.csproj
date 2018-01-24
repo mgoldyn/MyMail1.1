@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B160AE5F-2E40-439D-A1F0-63557B928EAD}</ProjectGuid>
+    <ProjectGuid>{459B954A-2978-45DB-B739-AA77BC5AFA52}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>MyMail</RootNamespace>
-    <AssemblyName>MyMail</AssemblyName>
+    <RootNamespace>MyMail1._2</RootNamespace>
+    <AssemblyName>MyMail1.2</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
