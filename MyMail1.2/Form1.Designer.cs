@@ -40,7 +40,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.temat = new System.Windows.Forms.RichTextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.wiadomosc = new System.Windows.Forms.RichTextBox();
+            this.wiadomosc1 = new System.Windows.Forms.RichTextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
@@ -143,16 +143,16 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Wiadomość:";
             // 
-            // wiadomosc
+            // wiadomosc1
             // 
-            this.wiadomosc.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.wiadomosc1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.wiadomosc.Location = new System.Drawing.Point(89, 171);
-            this.wiadomosc.Name = "wiadomosc";
-            this.wiadomosc.Size = new System.Drawing.Size(334, 196);
-            this.wiadomosc.TabIndex = 6;
-            this.wiadomosc.Text = "";
+            this.wiadomosc1.Location = new System.Drawing.Point(89, 171);
+            this.wiadomosc1.Name = "wiadomosc1";
+            this.wiadomosc1.Size = new System.Drawing.Size(334, 196);
+            this.wiadomosc1.TabIndex = 6;
+            this.wiadomosc1.Text = "";
             // 
             // button1
             // 
@@ -192,7 +192,7 @@
             this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.wiadomosc);
+            this.Controls.Add(this.wiadomosc1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.temat);
@@ -224,7 +224,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RichTextBox temat;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.RichTextBox wiadomosc;
+        private System.Windows.Forms.RichTextBox wiadomosc1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;

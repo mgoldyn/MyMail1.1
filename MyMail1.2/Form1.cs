@@ -38,7 +38,7 @@ namespace MyMail1._2
                 wiadomosc.From = new MailAddress(login);//od kogo wiadomość
                 wiadomosc.From.ToString();
                 wiadomosc.Subject = temat.Text;//tytuł wiadomości, który jest pobierany jest z tematu
-                wiadomosc.Body = wiadomosc.ToString();//treść wiadomości
+                wiadomosc.Body = wiadomosc1.Text;//treść wiadomości
                 foreach (string email in Odbiorca.Text.Split(';'))//pętla "dla każdej wartości" w tej liście nadaj nazwę email w textbox rozdzielą ;
                 {
                     wiadomosc.To.Add(email);//dodaj kolekcję do email
