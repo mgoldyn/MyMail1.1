@@ -34,11 +34,12 @@ namespace MyMail1._2
         {
             try//spróbuj
             {
+                button1.Enabled = false;
                 MailMessage wiadomosc = new MailMessage(); //klasa o nazwie "wiadomość" typu wiadomosci mail
                 wiadomosc.From = new MailAddress(login);//od kogo wiadomość
                 wiadomosc.From.ToString();
                 wiadomosc.Subject = temat.Text;//tytuł wiadomości, który jest pobierany jest z tematu
-                wiadomosc.Body = wiadomosc1.Text;//treść wiadomości
+                wiadomosc.Body = wiadomosc1.Text + "\n\n\n Wysłane z kilena studentckiego MyMail1.2";//treść wiadomości
                 foreach (string email in Odbiorca.Text.Split(';'))//pętla "dla każdej wartości" w tej liście nadaj nazwę email w textbox rozdzielą ;
                 {
                     wiadomosc.To.Add(email);//dodaj kolekcję do email
@@ -50,10 +51,17 @@ namespace MyMail1._2
                 klient.EnableSsl = true;//podanie zabezpieczenia poczty
                 klient.Send(wiadomosc);//wysłanie wiadomości
                 MessageBox.Show(this, "Wysłano wiadomość e-mail!", "Sukces!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                temat.Text = string.Empty;
+                Odbiorca.Text = string.Empty;
+                wiadomosc1.Text = string.Empty;
             }
             catch//złap, jeśli się nie uda
             {
                 MessageBox.Show(this, "Wystąpił problem podczas wysyłania wiadomości e-mail.", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                button1.Enabled = true;
             }
         }
 
