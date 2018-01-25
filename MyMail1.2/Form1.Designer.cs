@@ -70,8 +70,8 @@
             // menuToolStripMenuItem
             // 
             this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.zamknijToolStripMenuItem,
-            this.oProjekcieToolStripMenuItem});
+            this.oProjekcieToolStripMenuItem,
+            this.zamknijToolStripMenuItem});
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
             this.menuToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.menuToolStripMenuItem.Text = "Menu";
@@ -79,13 +79,14 @@
             // zamknijToolStripMenuItem
             // 
             this.zamknijToolStripMenuItem.Name = "zamknijToolStripMenuItem";
-            this.zamknijToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.zamknijToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.zamknijToolStripMenuItem.Text = "Zamknij";
+            this.zamknijToolStripMenuItem.Click += new System.EventHandler(this.zamknijToolStripMenuItem_Click);
             // 
             // oProjekcieToolStripMenuItem
             // 
             this.oProjekcieToolStripMenuItem.Name = "oProjekcieToolStripMenuItem";
-            this.oProjekcieToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.oProjekcieToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.oProjekcieToolStripMenuItem.Text = "O projekcie";
             this.oProjekcieToolStripMenuItem.Click += new System.EventHandler(this.oProjekcieToolStripMenuItem_Click);
             // 

@@ -20,10 +20,6 @@ namespace MyMail1._2
             InitializeComponent();
         }
 
-        private void zamknijToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
         private void oProjekcieToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("MyMail by Michał Gołdyn, Programowanie aplikacyjne 2017");
@@ -51,9 +47,6 @@ namespace MyMail1._2
                 klient.EnableSsl = true;//podanie zabezpieczenia poczty
                 klient.Send(wiadomosc);//wysłanie wiadomości
                 MessageBox.Show(this, "Wysłano wiadomość e-mail!", "Sukces!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                temat.Text = string.Empty;
-                Odbiorca.Text = string.Empty;
-                wiadomosc1.Text = string.Empty;
             }
             catch//złap, jeśli się nie uda
             {
@@ -62,6 +55,9 @@ namespace MyMail1._2
             finally
             {
                 button1.Enabled = true;
+                temat.Text = string.Empty;
+                Odbiorca.Text = string.Empty;
+                wiadomosc1.Text = string.Empty;
             }
         }
 
@@ -73,6 +69,9 @@ namespace MyMail1._2
             MessageBox.Show("Zalogowano");
         }
 
-
+        private void zamknijToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
